@@ -129,3 +129,80 @@ first_model.summary()
 **OUTPUT**:
 
 
+
+#### 4. Training the model
+
+
+``` 
+from PIL import ImageFile
+ImageFile.LOAD_TRUNCATED_IMAGES = True
+checkpointer = ModelCheckpoint('first_model.hdf5',verbose=1, save_best_only= True)
+early_stopping = EarlyStopping(monitor= 'val_loss', patience= 10)
+optimizer = optimizers.Adam(learning_rate= 0.00001, decay= 1e-5)
+first_model.compile(loss= 'categorical_crossentropy', optimizer= optimizer,
+                    metrics=['AUC','acc'])
+
+history = first_model.fit(train_generator,
+epochs = 50,
+verbose = 1,
+validation_data = valid_generator,
+callbacks = [checkpointer, early_stopping])
+``` 
+
+**OUTPUT**:
+
+#### 5. Plots/Graphs
+
+
+``` 
+plt.plot(history.history['acc'], label = 'train',)
+plt.plot(history.history['val_acc'], label = 'valid')
+
+plt.legend(loc = 'lower right')
+plt.xlabel('epochs')
+plt.ylabel('accuracy')
+
+# show plot
+plt.show()
+``` 
+
+**OUTPUT**:
+
+
+
+``` 
+plt.hist(history.history['acc'], label = 'train',color='green')
+
+plt.legend(loc = 'lower right')
+plt.xlabel('epochs')
+plt.ylabel('accuracy')
+``` 
+
+**OUTPUT**:
+
+
+```
+plt.hist(history.history['val_acc'], label = 'valid', color='orange')
+plt.legend(loc = 'lower right')
+plt.xlabel('epochs')
+plt.ylabel('accuracy') 
+```
+**OUTPUT**:
+
+
+```
+plt.hist(history.history['acc'], label = 'train',color='green')
+plt.hist(history.history['val_acc'], label = 'valid', color='orange')
+
+plt.legend(loc = 'lower right')
+plt.xlabel('epochs')
+plt.ylabel('accuracy')
+```
+
+**OUTPUT**:
+
+
+```
+result = first_model.evaluate(test_generator) 
+```
+**OUTPUT**:
