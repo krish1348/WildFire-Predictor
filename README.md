@@ -97,3 +97,35 @@ test_generator = test_datagen.flow_from_directory(test_path,
 **OUTPUT**:
 
 ![WP2](https://github.com/krish1348/WildFire-Predictor/assets/90926847/53699596-0275-4778-bb86-5f5e063aaa2d)
+
+
+
+
+#### 3. Building the model
+
+``` 
+weight_decay = 1e-3
+first_model = Sequential([
+    Conv2D(filters = 8 , kernel_size = 2, activation = 'relu', 
+    input_shape = image_shape), MaxPooling2D(pool_size = 2),
+    
+    Conv2D(filters = 16 , kernel_size = 2, activation = 'relu', 
+    input_shape = image_shape), MaxPooling2D(pool_size = 2),
+    
+    Conv2D(filters = 32 , kernel_size = 2, activation = 'relu',
+           kernel_regularizer = regularizers.l2(weight_decay)),
+    MaxPooling2D(pool_size = 2),
+    
+    Dropout(0.4),
+    Flatten(),
+    Dense(300,activation='relu'),
+    Dropout(0.5),
+    Dense(2,activation='softmax')
+])
+
+first_model.summary()
+
+``` 
+**OUTPUT**:
+
+
