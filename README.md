@@ -54,7 +54,7 @@ for device in tf.config.list_physical_devices():
 ``` 
 **OUTPUT**:
 
-***: /physical_device:CPU:0***
+![WP1](https://github.com/krish1348/WildFire-Predictor/assets/90926847/85e3cf14-0d09-49a4-b9b3-45294b96f2c7)
 
 
 
