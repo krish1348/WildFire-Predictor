@@ -127,7 +127,7 @@ first_model.summary()
 
 ``` 
 **OUTPUT**:
-
+![WP3](https://github.com/krish1348/WildFire-Predictor/assets/90926847/c9edceb3-fe63-467d-a215-a6e73e67be87)
 
 
 #### 4. Training the model
