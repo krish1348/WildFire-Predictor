@@ -96,6 +96,4 @@ test_generator = test_datagen.flow_from_directory(test_path,
 
 **OUTPUT**:
 
-***Found 30250 images belonging to 2 classes.***  
-***Found 6300 images belonging to 2 classes.***   
-***Found 6300 images belonging to 2 classes.***
+![WP2](https://github.com/krish1348/WildFire-Predictor/assets/90926847/53699596-0275-4778-bb86-5f5e063aaa2d)
