@@ -224,3 +224,6 @@ result = first_model.evaluate(test_generator)
 **OUTPUT**:
 
 ![WP10](https://github.com/krish1348/WildFire-Predictor/assets/90926847/d8a151a4-f928-4865-8e94-9e636e1e43a5)
+
+
+## THAT's IT! Your code should have ran properly!
