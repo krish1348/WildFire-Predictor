@@ -127,6 +127,7 @@ first_model.summary()
 
 ``` 
 **OUTPUT**:
+
 ![WP3](https://github.com/krish1348/WildFire-Predictor/assets/90926847/c9edceb3-fe63-467d-a215-a6e73e67be87)
 
 
@@ -150,6 +151,8 @@ callbacks = [checkpointer, early_stopping])
 ``` 
 
 **OUTPUT**:
+![WP4](https://github.com/krish1348/WildFire-Predictor/assets/90926847/cd649ae5-fc8d-4a98-b085-19d6f6d6f82c)
+
 
 #### 5. Plots/Graphs
 
