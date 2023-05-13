@@ -151,7 +151,11 @@ callbacks = [checkpointer, early_stopping])
 ``` 
 
 **OUTPUT**:
+
+
 ![WP4](https://github.com/krish1348/WildFire-Predictor/assets/90926847/cd649ae5-fc8d-4a98-b085-19d6f6d6f82c)
+![WP5](https://github.com/krish1348/WildFire-Predictor/assets/90926847/064c2aad-ba7c-4915-a9f8-86aaf52dee44)
+
 
 
 #### 5. Plots/Graphs
