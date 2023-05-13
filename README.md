@@ -175,6 +175,9 @@ plt.show()
 
 **OUTPUT**:
 
+![WP6](https://github.com/krish1348/WildFire-Predictor/assets/90926847/92207889-c0b3-4031-b75a-a884c47755a5)
+
+
 
 
 ``` 
@@ -186,6 +189,8 @@ plt.ylabel('accuracy')
 ``` 
 
 **OUTPUT**:
+
+![WP7](https://github.com/krish1348/WildFire-Predictor/assets/90926847/c51c72e4-7428-46be-9344-dc878a580265)
 
 
 ```
@@ -194,8 +199,10 @@ plt.legend(loc = 'lower right')
 plt.xlabel('epochs')
 plt.ylabel('accuracy') 
 ```
+
 **OUTPUT**:
 
+![WP8](https://github.com/krish1348/WildFire-Predictor/assets/90926847/24ec881e-87df-45de-980c-5ffc0d0a5625)
 
 ```
 plt.hist(history.history['acc'], label = 'train',color='green')
@@ -208,8 +215,12 @@ plt.ylabel('accuracy')
 
 **OUTPUT**:
 
+![WP9](https://github.com/krish1348/WildFire-Predictor/assets/90926847/0ba34097-8f82-4141-952a-642e30c6ff1e)
+
 
 ```
 result = first_model.evaluate(test_generator) 
 ```
 **OUTPUT**:
+
+![WP10](https://github.com/krish1348/WildFire-Predictor/assets/90926847/d8a151a4-f928-4865-8e94-9e636e1e43a5)
